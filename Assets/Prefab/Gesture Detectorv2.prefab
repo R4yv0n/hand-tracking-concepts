@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2380283902829752523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2380283902829752521}
+  - component: {fileID: 2380283902829752522}
+  m_Layer: 0
+  m_Name: Gesture Detectorv2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2380283902829752521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2380283902829752523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.40146542, y: 1.3078167, z: 0.86063576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2380283902829752522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2380283902829752523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071b1c03eb399a045994ac601006985a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.05
+  skeleton: {fileID: 0}
+  gestures:
+  - name: TeleportInitGesture
+    fingerDatas:
+    - {x: 0.000000025953993, y: 0.000000056784575, z: -0.0000000028359843}
+    - {x: 0.000000025953993, y: 0.000000056784575, z: -0.0000000028359843}
+    - {x: -0.02006933, y: -0.011554101, z: -0.010496492}
+    - {x: -0.034336675, y: -0.015754413, z: -0.030407542}
+    - {x: -0.059815425, y: -0.018703345, z: -0.050388213}
+    - {x: -0.08843506, y: -0.018364932, z: -0.06835419}
+    - {x: -0.095996216, y: -0.007316465, z: -0.023550684}
+    - {x: -0.1338231, y: -0.009588369, z: -0.021986902}
+    - {x: -0.15766464, y: -0.014103251, z: -0.020620482}
+    - {x: -0.095646605, y: -0.0025431067, z: -0.0017259131}
+    - {x: -0.10923468, y: -0.043196782, z: 0.0005925229}
+    - {x: -0.0828306, y: -0.0487061, z: -0.005015859}
+    - {x: -0.08869382, y: -0.006529326, z: 0.017465238}
+    - {x: -0.09673338, y: -0.044665832, z: 0.016174167}
+    - {x: -0.07193222, y: -0.04740738, z: 0.007034729}
+    - {x: -0.034073535, y: -0.009419911, z: 0.02299859}
+    - {x: -0.07789585, y: -0.013691202, z: 0.035054054}
+    - {x: -0.08547514, y: -0.042607483, z: 0.02797269}
+    - {x: -0.06658953, y: -0.045367144, z: 0.02102509}
+    - {x: -0.10532564, y: -0.018142354, z: -0.08626704}
+    - {x: -0.17987615, y: -0.014037068, z: -0.017809514}
+    - {x: -0.06871091, y: -0.028988104, z: -0.011054614}
+    - {x: -0.057805944, y: -0.02824745, z: 0.001765897}
+    - {x: -0.052546695, y: -0.028904838, z: 0.017294021}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: InitiateTeleport
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+    onReleased:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: TeleportGesture
+    fingerDatas:
+    - {x: 0.00000006761063, y: -0.000000024520538, z: -0.0000000081388265}
+    - {x: 0.00000006761063, y: -0.000000024520538, z: -0.0000000081388265}
+    - {x: -0.020069286, y: -0.011554094, z: -0.01049654}
+    - {x: -0.03429129, y: -0.01566198, z: -0.030459253}
+    - {x: -0.060334582, y: -0.016380271, z: -0.04990979}
+    - {x: -0.09066371, y: -0.01541692, z: -0.064782254}
+    - {x: -0.09599622, y: -0.0073164473, z: -0.023550684}
+    - {x: -0.11669451, y: -0.039089378, z: -0.022812448}
+    - {x: -0.09324077, y: -0.045321543, z: -0.021490296}
+    - {x: -0.09564654, y: -0.0025431511, z: -0.0017259121}
+    - {x: -0.10768821, y: -0.043727607, z: -0.0004745265}
+    - {x: -0.080781616, y: -0.047916695, z: -0.0046546324}
+    - {x: -0.08869374, y: -0.0065292846, z: 0.01746522}
+    - {x: -0.09475045, y: -0.044969838, z: 0.014947722}
+    - {x: -0.069061406, y: -0.04488103, z: 0.008150308}
+    - {x: -0.034073543, y: -0.009419834, z: 0.022998592}
+    - {x: -0.077895805, y: -0.013691175, z: 0.035054035}
+    - {x: -0.082383774, y: -0.0430382, z: 0.027157586}
+    - {x: -0.063017614, y: -0.04353018, z: 0.021052945}
+    - {x: -0.10945841, y: -0.014754586, z: -0.08067344}
+    - {x: -0.076804005, y: -0.030121185, z: -0.021280117}
+    - {x: -0.06345164, y: -0.030625405, z: -0.009686345}
+    - {x: -0.05001864, y: -0.030652028, z: 0.0027355067}
+    - {x: -0.045459278, y: -0.03166959, z: 0.015294226}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: TeleportToDestination
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+    onReleased:
+      m_PersistentCalls:
+        m_Calls: []
+  debugMode: 1
+  notRecognize:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.bt-hand-tracking.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\silbe\Documents\Projects\bt-hand-tracking\.idea\.idea.bt-hand-tracking\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
